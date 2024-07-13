@@ -12,8 +12,8 @@ const Navbar = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <div className="flex  w-full space-x-6 py-10 px-12">
-      <div className='flex items-center justify-between border-b w-full space-x-10'>
+    <div className="flex w-fit space-x-6 py-10 px-12">
+      <div className='flex items-center justify-between border-b md:w-full w-full space-x-10'>
       <div className='flex items-center  '>
       <img src={Logo} alt="" className="w-10 h-auto" />
       <h1 className='font-bold ml-3 md:text-2xl text-3xl '>AVESHAM</h1>
