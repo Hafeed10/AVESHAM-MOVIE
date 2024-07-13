@@ -22,6 +22,8 @@ const Navbar = () => {
           <li className="mr-6">Services</li>
           <li>Blog</li>
         </ul>
+        
+        {/* // * Button left side full start */}
         <div className="flex justify-end items-center">
           <div className="font-bold py-2 px-4 rounded">
             <CiLogin color='black' size={30} />
@@ -35,8 +37,9 @@ const Navbar = () => {
           <div className='xl:hidden md:block mr-20' onClick={toggleMenu}>
             <RiMenuFold3Fill size={30} color='black' />
           </div>
+          {/* // * Button left side full end */}
         
-          {/* // ! Responsive Navbar setting start  */}
+          {/* // ? Responsive Navbar setting start  */}
           {isOpen && (
             <div className="absolute top-0 w-1/2 bg-white shadow-md py-4 flex flex-col items-center">
               <IoMdClose size={30} className="mb-4 cursor-pointer  ml-20" onClick={toggleMenu} />
@@ -48,7 +51,7 @@ const Navbar = () => {
               </ul>
             </div>
           )}
-            {/* // ! Responsive Navbar setting end  */}
+            {/* // ? Responsive Navbar setting end  */}
         </div>
     </div>
   );
