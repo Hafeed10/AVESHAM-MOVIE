@@ -12,10 +12,10 @@ const Navbar = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <div className="flex justify-between items-center space-x-6  py-10 px-12 border border-b-1">
+    <div className="flex justify-between  items-center w-full space-x-6  py-10 px-12 border border-b-1 border-t-none">
       <div className='flex items-center  '>
       <img src={Logo} alt="" className="w-10 h-auto" />
-      <h1 className='font-bold ml-3 text-3xl sm:text-2xl'>AVESHAM</h1>
+      <h1 className='font-bold ml-3 md:text-2xl text-3xl '>AVESHAM</h1>
       </div> 
       <ul className="flex justify-center cursor-pointer hidden xl:flex">
         <li className="mr-6">Home</li>
