@@ -6,7 +6,7 @@ import pop from '../../Data/Home'
 
 const Home = () => {
   return (
-    <div className="max-w-full flex flex-col md:flex-col items-center justify-between py-10 px-12">
+    <div className="max-w-full flex flex-col md:flex-col items-center justify-between py-10 px-12 font-mono">
       <div className="flex flex-wrap justify-center items-center py-10">
         <div className="w-60 ">
           <img src={Img} alt="Aavesham Poster"/>
@@ -15,8 +15,8 @@ const Home = () => {
           <p className="text-start p-5 w-full">
            {
             pop.map((p, i) => (
-              <p key={i} className="text-2xl text-left p-5 w-full">
-                {p.title}
+              <p key={i} className="text-sm text-left p-5 w-full">
+                {p.descrption}
               </p>
             ))
             }
@@ -43,7 +43,7 @@ const Home = () => {
       <FaArrowDown size={20}/>
       </div>
        {/* // ! scroll button start  */}
-       
+
     </div>
   );
 };
