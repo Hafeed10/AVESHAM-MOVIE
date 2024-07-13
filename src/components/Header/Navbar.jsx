@@ -12,7 +12,8 @@ const Navbar = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <div className="flex justify-between  items-center w-full space-x-6  py-10 px-12 border border-b-1 border-t-none">
+    <div className="flex  w-full space-x-6 py-10 px-12">
+      <div className='flex items-center justify-between border-b w-full space-x-10'>
       <div className='flex items-center  '>
       <img src={Logo} alt="" className="w-10 h-auto" />
       <h1 className='font-bold ml-3 md:text-2xl text-3xl '>AVESHAM</h1>
@@ -33,9 +34,10 @@ const Navbar = () => {
         <div className=" font-bold py-2 px-4 rounded ml-2">
           <IoIosContact size={30} color='black' />
         </div>
-        <div className='xl:hidden md:block' onClick={toggleMenu}>
+        <div className='xl:hidden md:block mr-20' onClick={toggleMenu}>
           <RiMenuFold3Fill size={30} color='black' />
         </div>
+     
         {/* // ! Responsive Navbar setting start  */}
         {isOpen && (
           <div className="absolute top-0 w-1/2 bg-white shadow-md py-4 flex flex-col items-center">
@@ -49,6 +51,7 @@ const Navbar = () => {
           </div>
         )}
           {/* // ! Responsive Navbar setting end  */}
+      </div>
       </div>
     </div>
   );
