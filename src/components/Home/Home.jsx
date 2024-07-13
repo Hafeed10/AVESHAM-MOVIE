@@ -3,10 +3,10 @@ import Img from '../asetss/Home/3fffd702d48852ede79ed71d04f36a2b.jpg';
 import { FaArrowRight } from "react-icons/fa";
 import { FaArrowDown } from "react-icons/fa6";
 import pop from '../../Data/Home'
-
+// import './Home.scss'
 const Home = () => {
   return (
-    <div className="max-w-full flex flex-col md:flex-col items-center justify-between py-10 px-12 font-mono">
+    <div className="max-w-full flex flex-col md:flex-col items-center justify-between py-10 px-12 ">
       <div className="flex flex-wrap justify-center items-center py-10">
         <div className="w-60 ">
           <img src={Img} alt="Aavesham Poster"/>
@@ -15,7 +15,7 @@ const Home = () => {
           <p className="text-start p-5 w-full">
            {
             pop.map((p, i) => (
-              <p key={i} className="text-sm text-left p-5 w-full">
+              <p key={i} className="text-sm text-left p-5 w-full line-clamp-6">
                 {p.descrption}
               </p>
             ))
