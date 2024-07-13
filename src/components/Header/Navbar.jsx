@@ -39,9 +39,7 @@ const Navbar = () => {
         {/* // ! Responsive Navbar setting start  */}
         {isOpen && (
           <div className="absolute top-0 w-1/2 bg-white shadow-md py-4 flex flex-col items-center">
-            <div className='flex justify-end items-end ml-20'>
-            <IoMdClose size={30} className="mb-4 cursor-pointer  " onClick={toggleMenu} />
-            </div>
+            <IoMdClose size={30} className="mb-4 cursor-pointer  ml-20" onClick={toggleMenu} />
             <ul className='cursor-pointer '>
               <li className="px-4 py-2">Home</li>
               <li className="px-4 py-2">About</li>
