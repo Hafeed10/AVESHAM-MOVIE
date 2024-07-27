@@ -4,6 +4,7 @@ import Home from '../components/Home/Home'
 import Middle from '../components/Middle/Middle'
 import Slider from '../components/Slider/Slider'
 import Poupap from  '../components/poupap/poupap'
+import Arrow from '../components/arrow/Arrow'
 
 const Layout = () => {
   return (
@@ -13,6 +14,7 @@ const Layout = () => {
     <Middle/>
     <Slider/>
     <Poupap/>
+    <Arrow/>
       
     </>
   );
